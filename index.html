@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>slaptain — a Kubernetes operator for multi-site multi-master OpenLDAP</title>
+<title>chuck-chuck-chuck.net — Kubernetes operators</title>
 <style>
   :root { color-scheme: dark; }
   body {
@@ -12,10 +12,12 @@
     font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
   main { max-width: 42rem; margin: 0 auto; }
-  h1 { font-size: 2.5rem; margin: 0 0 .25rem; font-weight: 600; letter-spacing: -.02em; }
-  .sub { color: #9ca3af; font-size: 1.125rem; margin: 0 0 2.5rem; }
-  .box { background: #1f2937; border-radius: .5rem; padding: 1rem 1.25rem; margin: 0 0 1.5rem; }
-  .box b { color: #fbbf24; font-weight: 600; }
+  h1 { font-size: 2rem; margin: 0 0 2rem; font-weight: 600; letter-spacing: -.02em; }
+  .p { background: #1f2937; border-radius: .5rem; padding: 1rem 1.25rem; margin: 0 0 1rem; }
+  .p h2 { font-size: 1.25rem; margin: 0 0 .25rem; font-weight: 600; }
+  .p h2 a { color: #e5e7eb; text-decoration: none; }
+  .p h2 a:hover { color: #2dd4bf; }
+  .p p { margin: 0; color: #9ca3af; }
   a { color: #2dd4bf; }
   code { font-family: ui-monospace, "Fira Code", monospace; font-size: .9em; }
   footer { color: #6b7280; font-size: .875rem; margin-top: 3rem; }
@@ -23,23 +25,19 @@
 </head>
 <body>
 <main>
-  <h1>slaptain</h1>
-  <p class="sub">A Kubernetes operator for a multi-site, multi-master replicating OpenLDAP cluster.</p>
+  <h1>Kubernetes operators</h1>
 
-  <p>slaptain manages the lifecycle of an OpenLDAP cluster on Kubernetes: cluster
-  bootstrap, N-way multi-master replication within a site and between sites,
-  databases, schemas and ACLs as custom resources, backup and restore.</p>
-
-  <div class="box">
-    <b>Early and experimental.</b> A one-person spare-time project, proven in a lab
-    and nowhere else. No release yet. Not a product.
+  <div class="p">
+    <h2><a href="/slaptain">slaptain</a></h2>
+    <p>A Kubernetes operator for a multi-site, multi-master replicating OpenLDAP
+    cluster. Early and experimental.</p>
   </div>
 
-  <p>Source and documentation:
-  <a href="https://github.com/chuck-chuck-chuck-net/slaptain">github.com/chuck-chuck-chuck-net/slaptain</a></p>
-
-  <p>Talk at LDAPCon — <em>slaptain: A Kubernetes Operator for Multi-Site
-  Multi-Master OpenLDAP</em>. The slides will be published here after the talk.</p>
+  <div class="p">
+    <h2><a href="https://github.com/littlered-operator/littlered">littlered</a></h2>
+    <p>A Kubernetes operator sharing the <code>chuck-chuck-chuck.net</code> API
+    group. Currently hosted in its own organization.</p>
+  </div>
 
   <footer>Apache-2.0 &middot; Dominik Epple</footer>
 </main>
