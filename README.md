@@ -1,7 +1,8 @@
 # chuck-chuck-chuck-net.github.io
 
-The index page at <https://chuck-chuck-chuck-net.github.io>, linking out to the
-project sites.
+The index page at <https://www.chuck-chuck-chuck.net>, linking out to the project
+sites. `CNAME` sets that custom domain. The bare `chuck-chuck-chuck.net` and
+<https://chuck-chuck-chuck-net.github.io> both redirect there.
 
 Each project publishes its own site from a `gh-pages` branch in its own
 repository, under its own subdomain — slaptain at
